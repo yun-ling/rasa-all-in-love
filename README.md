@@ -20,6 +20,7 @@ rasa仅能在Python3.8的环境下运行，目前还未支持3.9
 更新数据库：
 常用的数据训练库是data/nlu.yml,domain.yml,data/rules.yml,data/stories.yml
 1. data/nlu.yml
+
 data/nlu.yml是用来判断用户输出的意图
 如下
 
@@ -45,6 +46,7 @@ nlu:
 表示如果用户输出 hello、good morning等话语的时候，intent意图是greet打招呼
 
 2.domain.yml 
+
 domain.yml是根据用户的意图 回复的话语 
 version: "2.0"
 
@@ -80,6 +82,7 @@ responses:
 intent表示注册的Intent,response则表示对对应intent的回应，前面建议加上utter_
 
 3. data/rules.yml
+
 data/rules.yml 是将responses与intent 绑定的规则
 
 rules:
@@ -95,6 +98,7 @@ rules:
   - action: utter_iamabot
 
 4. data/stories.yml
+
 data/stories.yml 是记录一种抽象的对话场景，以方便机器人辨析更长的对话链条
 
 version: "2.0"
