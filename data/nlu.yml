@@ -16,6 +16,17 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - 早啊
+    - 你好
+    - 早上好
+    - 中午好
+    - 晚上好
+    - 您好
+    - 嗨
+    - 嗨，美女
+    - 嗨，帅哥
+    - 嗨，靓仔
+
 
 - intent: goodbye
   examples: |
@@ -30,6 +41,18 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - 再见了
+    - 88
+    - 886
+    - 晚安
+    - 午安
+    - 拜拜
+    - 我有事，要下啦
+    - 再见咯
+    - 再见啦，下次再聊
+    - 古德拜
+    - 再见
+    - 我下了
 
 - intent: affirm
   examples: |

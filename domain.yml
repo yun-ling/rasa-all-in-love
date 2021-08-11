@@ -11,7 +11,11 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "没你的日子，每天都不好T_T"
+  - text: "我不会说你好，因为我们已心有灵犀"
+  - text: "一句问候，温暖心扉"
+  - text: "你好啊，再见到你还是那么美丽~"
+  - text: "哇，这不是我心中的贵人吗？"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -24,11 +28,13 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "我会时刻想念你的~"
+  - text: "快乐的时光真的很短暂，别了我的宝~"
+  - text: "再见~和你每一天都很快乐"
+  - text: "再见了~我会等你等到海枯石烂~"
+  - text: "亲爱的~别了 T_T"
+  - text: "bye ~记得我们曾经的约定哦~"
+  - text: "我挥一挥衣袖，只剩下我的泪水，再见了~"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
