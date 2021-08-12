@@ -21,8 +21,9 @@ MacOS：
 
 
 使用步骤：
-1.在代码根目录执行 rasa train 即可训练当前目录下模型
-2.在代码根目录执行 rasa shell即可和自己训练的机器人对话
+1.在代码根目录执行 python3.8 -m rasa train 即可训练当前目录下模型
+2.在代码根目录执行 python3.8 -m rasa_chinese_service.nlu.tokenizers.lm_tokenizer bert-base-chinese 启动中文分词器服务
+3.在代码根目录执行 python3.8 rasa shell打开命令行进行对话或者通过python3.8 rasa x 打开浏览器对话窗口
 
 更新数据库：
 常用的数据训练库是data/nlu.yml,domain.yml,data/rules.yml,data/stories.yml
@@ -143,3 +144,5 @@ stories:
 
 
 5.修改完上述训练数据后，就可以使用rasa train 重新训练，用rasa shell继续测试你的模型
+
+
