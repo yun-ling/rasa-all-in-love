@@ -10,10 +10,14 @@
 
 rasa仅能在Python3.8的环境下运行，目前还未支持3.9
 
-执行setup.sh 会在/usr/local/python3下安装python3.8,并软连接到/usr/bin/python3.8 和 /usr/bin/pip3.8
+Ubuntu:
+执行setup.sh 会在/usr/local/python3下安装python3.8.9,并软连接到/usr/bin/python3.8 和 /usr/bin/pip3.8
 该脚本还会自动执行pip3 install rasa 
 
-2.如果已有Python3.8的环境，请勿执行setup.sh,直接执行 pip3 install rasa即可
+MacOS：
+执行setup.sh会安装pyenv,然后通过pyenv 安装python3.8.9 ,并软连接到/usr/local/bin/python3.8 和 /usr/local/bin/pip3.8
+
+2.如果已有Python3.8的环境，请勿执行setup.sh,根据setup.sh里面的内容执行pip install 
 
 
 使用步骤：
