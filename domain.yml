@@ -1,40 +1,50 @@
-version: "2.0"
-
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+entities: []
+slots: {}
 responses:
   utter_greet:
-  - text: "没你的日子，每天都不好T_T"
-  - text: "我不会说你好，因为我们已心有灵犀"
-  - text: "一句问候，温暖心扉"
-  - text: "你好啊，再见到你还是那么美丽~"
-  - text: "哇，这不是我心中的贵人吗？"
-
+  - text: 没你的日子，每天都不好T_T
+  - text: 我不会说你好，因为我们已心有灵犀
+  - text: 一句问候，温暖心扉
+  - text: 你好啊，再见到你还是那么美丽~
+  - text: 哇，这不是我心中的贵人吗？
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "我会时刻想念你的~"
-  - text: "快乐的时光真的很短暂，别了我的宝~"
-  - text: "再见~和你每一天都很快乐"
-  - text: "再见了~我会等你等到海枯石烂~"
-  - text: "亲爱的~别了 T_T"
-  - text: "bye ~记得我们曾经的约定哦~"
-  - text: "我挥一挥衣袖，只剩下我的泪水，再见了~"
-
+  - text: 我会时刻想念你的~
+  - text: 快乐的时光真的很短暂，别了我的宝~
+  - text: 再见~和你每一天都很快乐
+  - text: 再见了~我会等你等到海枯石烂~
+  - text: 亲爱的~别了 T_T
+  - text: bye ~记得我们曾经的约定哦~
+  - text: 我挥一挥衣袖，只剩下我的泪水，再见了~
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: I am a bot, powered by Rasa.
+actions: []
+forms: {}
+e2e_actions: []
