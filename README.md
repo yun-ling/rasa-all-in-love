@@ -26,7 +26,7 @@ MacOS：
 
 2.在代码根目录执行 python3.8 -m rasa_chinese_service.nlu.tokenizers.lm_tokenizer bert-base-chinese 启动中文分词器服务
 
-3.在代码根目录执行 python3.8 rasa shell打开命令行进行对话或者通过python3.8 rasa x 打开浏览器对话窗口
+3.在代码根目录执行 python3.8 -m rasa shell打开命令行进行对话或者通过python3.8 -m rasa x 打开浏览器对话窗口
 
 更新数据库：
 常用的数据训练库是data/nlu.yml,domain.yml,data/rules.yml,data/stories.yml
