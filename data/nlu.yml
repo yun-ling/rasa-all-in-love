@@ -26,6 +26,9 @@ nlu:
     - 嗨，美女
     - 嗨，帅哥
     - 嗨，靓仔
+    - 哈喽
+    - 你好啊
+    - 您好啊
 
 
 - intent: goodbye
@@ -54,6 +57,19 @@ nlu:
     - 再见
     - 我下了
 
+- intent: whoami
+  examples: |
+    - 你是谁啊
+    - 你到底是谁啊
+    - 你是？
+    - 请问你是谁？
+    - 你是谁？
+    - 你哪位啊？
+    - 你到底是哪位啊
+    - 你谁啊
+
+
+
 - intent: affirm
   examples: |
     - yes
@@ -62,6 +78,40 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - 我同意
+    - 我赞成
+    - 太对了
+    - 不能再同意了
+    - 对，就是这样的
+    - 就是这样的
+    - 同意
+    - 赞成
+    - 你说的对
+    - 你说得太对了
+    - 你说得对
+    - 对头
+    - 简直太对了
+    - 对对对
+    - 是的
+    - 听上去不错
+    - 有道理
+    - 可以接受
+    - 是啊
+    - 对
+    - 嗯嗯
+    - 当然要啊
+    - 当然要
+    - 要啊
+
+
+- intent: low_level_affirm
+  examples: |
+    - 勉强接受吧
+    - 只能这样了
+    - 那好吧，只能这样了
+    - 唉，只能这样了
+    - 勉强接受
+    - 行的吧
 
 - intent: deny
   examples: |
@@ -72,6 +122,19 @@ nlu:
     - don't like that
     - no way
     - not really
+    - 不是的
+    - 我不同意
+    - 一点道理都没有
+    - 不是
+    - 我绝不
+    - 不行
+    - 别这样
+    - 没门
+    - 不同意
+    - 这肯定不行啊
+    - 不
+    - 不行吧
+    -
 
 - intent: mood_great
   examples: |
@@ -106,6 +169,12 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - 我很难过
+    - 太难过了
+    - 55555555555
+    - 我想哭
+    - 我很受伤
+    - 我太受伤了
 
 - intent: bot_challenge
   examples: |

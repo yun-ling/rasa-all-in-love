@@ -19,15 +19,19 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- whoami:
+    use_entities: true
+- low_level_affirm:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
   - text: 没你的日子，每天都不好T_T
-  - text: 我不会说你好，因为我们已心有灵犀
+  - text: 我们的感情那么深，不用打招呼~
   - text: 一句问候，温暖心扉
   - text: 你好啊，再见到你还是那么美丽~
-  - text: 哇，这不是我心中的贵人吗？
+  - text: 哇，这不是我的贵人吗？
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -36,7 +40,7 @@ responses:
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
-  - text: 我会时刻想念你的~
+  - text: 好的，再见咯，我会想你的~
   - text: 快乐的时光真的很短暂，别了我的宝~
   - text: 再见~和你每一天都很快乐
   - text: 再见了~我会等你等到海枯石烂~
@@ -45,6 +49,10 @@ responses:
   - text: 我挥一挥衣袖，只剩下我的泪水，再见了~
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_answer_whoami:
+  - text: 我是你的小太阳呀~
+  - text: 我是世界上最爱你的人呀~
+  - text: 我……我是你的盖世英雄~耶！
 actions: []
 forms: {}
 e2e_actions: []

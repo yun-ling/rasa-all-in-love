@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: ask who am i
+  steps:
+  - intent: whoami
+  - action: utter_answer_whoami
